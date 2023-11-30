@@ -1,5 +1,5 @@
 {
-  description = "Dev Tools";
+  description = "Go Project";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
@@ -14,10 +14,10 @@
         in
         {
           default = pkgs.mkShell {
-            name = "dt";
+            name = "go-project";
             shellHook = ''
               git config pull.rebase true
-              ${pkgs.neo-cowsay}/bin/cowsay -f sage "Dev Tools"
+              ${pkgs.neo-cowsay}/bin/cowsay -f sage "Go Project"
             '';
             buildInputs = with pkgs; [
               editorconfig-checker
@@ -26,12 +26,5 @@
           };
         }
       );
-
-      templates = {
-        go = {
-          path = ./template/go;
-          description = "Setup Go Project";
-        };
-      };
     };
 }
