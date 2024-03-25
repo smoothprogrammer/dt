@@ -11,17 +11,17 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
       - name: Setup Nix
-        uses: cachix/install-nix-action@v20
+        uses: cachix/install-nix-action@v26
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Cache Nix
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.CI_NIX_STORE }}
           key: ${{ runner.os }}-nix-${{ hashFiles('flake.nix', 'flake.lock') }}
       - name: Cache Go
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           key: ${{ runner.os }}-go-${{ hashfiles('go.mod', 'go.sum') }}
           path: |
@@ -35,12 +35,12 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
       - name: Setup Nix
-        uses: cachix/install-nix-action@v20
+        uses: cachix/install-nix-action@v26
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: Cache Nix
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: ${{ env.CI_NIX_STORE }}
           key: ${{ runner.os }}-nix-${{ hashFiles('flake.nix', 'flake.lock') }}
