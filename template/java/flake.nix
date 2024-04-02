@@ -1,5 +1,5 @@
 {
-  description = "Dev Tools";
+  description = "Java Project";
 
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
@@ -14,34 +14,18 @@
         in
         {
           default = pkgs.mkShell {
-            name = "dt";
+            name = "java-project";
             shellHook = ''
               git config pull.rebase true
-              ${pkgs.neo-cowsay}/bin/cowsay -f sage "Dev Tools"
+              ${pkgs.neo-cowsay}/bin/cowsay -f sage "Java Project"
             '';
             buildInputs = with pkgs; [
               editorconfig-checker
-
-              # go
-              go
-
-              # java
               jdk
               maven
             ];
           };
         }
       );
-
-      templates = {
-        go = {
-          path = ./template/go;
-          description = "Setup Go Project";
-        };
-        java = {
-          path = ./template/java;
-          description = "Setup Java Project";
-        };
-      };
     };
 }
