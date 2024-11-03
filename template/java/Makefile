@@ -1,4 +1,4 @@
 test:
-	@mvn test
+	@mvn clean test
 run:
-	@mvn -q exec:java
+	@mvn -e -q clean exec:java
