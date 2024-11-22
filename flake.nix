@@ -41,6 +41,10 @@
           path = ./template/java;
           description = "Setup Java Project";
         };
+        elm = {
+          path = ./template/elm;
+          description = "Setup Elm Project";
+        };
       };
     };
 }
