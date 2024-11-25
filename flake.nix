@@ -41,6 +41,10 @@
           path = ./template/java;
           description = "Setup Java Project";
         };
+        gleam = {
+          path = ./template/gleam;
+          description = "Setup Gleam Project";
+        };
         elm = {
           path = ./template/elm;
           description = "Setup Elm Project";
