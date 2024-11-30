@@ -25,6 +25,7 @@
               editorconfig-checker
               gleam
               erlang
+              rebar3
             ];
           };
         }
