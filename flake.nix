@@ -46,7 +46,7 @@
           description = "Setup Gleam Project";
         };
         gleam-fullstack = {
-          path = ./template/gleamfullstack;
+          path = ./template/gleam-fullstack;
           description = "Setup Gleam Fullstack Project";
         };
         elm = {
