@@ -24,7 +24,7 @@
             buildInputs = with pkgs; [
               editorconfig-checker
               gleam
-              erlang
+              erlang_27
               rebar3
             ];
           };
