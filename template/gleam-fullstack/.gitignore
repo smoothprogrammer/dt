@@ -2,4 +2,7 @@
 *.ez
 **/build
 **/erl_crash.dump
-**/priv
+frontend/priv/*
+!frontend/priv/static
+frontend/priv/static/*
+!frontend/priv/static/lustre_ui.css
