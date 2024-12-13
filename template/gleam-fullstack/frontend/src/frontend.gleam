@@ -1,13 +1,17 @@
 import lustre
 import lustre/effect.{type Effect}
-import lustre/element.{type Element}
-import lustre/element/html
-import lustre/ui/alert.{alert}
-import lustre/ui/theme
+import sketch
+import sketch/lustre as sketch_lustre
+import sketch/lustre/element.{type Element}
+import sketch/lustre/element/html
+import sketch/size
 
 pub fn main() {
-  let app = lustre.application(init, update, view)
-  let assert Ok(_) = lustre.start(app, "#app", Nil)
+  let assert Ok(cache) = sketch.cache(strategy: sketch.Ephemeral)
+  sketch_lustre.node()
+  |> sketch_lustre.compose(view, cache)
+  |> lustre.application(init, update, _)
+  |> lustre.start("#app", Nil)
 }
 
 type Model =
@@ -24,7 +28,13 @@ fn update(_model: Model, _msg: Msg) -> #(Model, Effect(Msg)) {
 }
 
 fn view(_model: Model) -> Element(Msg) {
-  theme.inject(theme.default(), fn() {
-    alert([alert.success()], [html.text("Hello, World!")])
-  })
+  html.main(main_style(), [], [html.text("Hello, World!")])
+}
+
+fn main_style() {
+  sketch.class([
+    sketch.display("grid"),
+    sketch.place_items("center"),
+    sketch.height(size.vh(100)),
+  ])
 }
