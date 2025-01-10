@@ -29,17 +29,9 @@
       );
 
       templates = {
-        go = {
-          path = ./template/go;
-          description = "Setup Go Project";
-        };
-        zig = {
-          path = ./template/zig;
-          description = "Setup Zig Project";
-        };
-        java = {
-          path = ./template/java;
-          description = "Setup Java Project";
+        elm = {
+          path = ./template/elm;
+          description = "Setup Elm Project";
         };
         gleam = {
           path = ./template/gleam;
@@ -49,9 +41,38 @@
           path = ./template/gleam-fullstack;
           description = "Setup Gleam Fullstack Project";
         };
-        elm = {
-          path = ./template/elm;
-          description = "Setup Elm Project";
+        go = {
+          path = ./template/go;
+          description = "Setup Go Project";
+        };
+        java = {
+          path = ./template/java;
+          description = "Setup Java Project";
+        };
+        zig = {
+          path = ./template/zig;
+          description = "Setup Zig Project";
+        };
+
+        bin-elm = {
+          path = ./bin/elm;
+          description = "Install Elm Binary";
+        };
+        bin-gleam = {
+          path = ./bin/gleam;
+          description = "Install Gleam Binary";
+        };
+        bin-go = {
+          path = ./bin/go;
+          description = "Install Go Binary";
+        };
+        bin-java = {
+          path = ./bin/java;
+          description = "Install Java Binary";
+        };
+        bin-zig = {
+          path = ./bin/zig;
+          description = "Install Zig Binary";
         };
       };
     };
