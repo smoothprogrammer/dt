@@ -26,6 +26,7 @@
               editorconfig-checker
               jdk
               maven
+              jdt-language-server
             ];
           };
         }
