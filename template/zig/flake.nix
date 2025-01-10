@@ -25,6 +25,7 @@
             buildInputs = with pkgs; [
               editorconfig-checker
               zig
+              zls
             ];
           };
         }
