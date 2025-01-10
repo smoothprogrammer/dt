@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Nix
-        uses: nixbuild/nix-quick-install-action@v29
+        uses: cachix/install-nix-action@v30
       - name: Checkout
         uses: actions/checkout@v4
       - name: Cache Nix
