@@ -18,6 +18,7 @@
           default = pkgs.mkShell {
             name = "gleam-fullstack-project";
             shellHook = ''
+              git rev-parse --is-inside-work-tree >/dev/null 2>&1 || git init
               git config pull.rebase true
               ${pkgs.neo-cowsay}/bin/cowsay -f sage "Gleam Fullstack Project"
             '';
