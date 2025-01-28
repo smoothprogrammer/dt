@@ -1,3 +1,5 @@
+.PHONY: build test run clean
+
 test:
 	@go test -cover ./...
 run:
