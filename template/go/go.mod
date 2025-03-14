@@ -1,5 +1,5 @@
 module github.com/minizilla/goproject
 
-go 1.23
+go 1.24
 
 require github.com/minizilla/testr v0.4.0
