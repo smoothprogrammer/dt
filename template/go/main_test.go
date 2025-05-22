@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/minizilla/testr"
+	"github.com/smoothprogrammer/testr"
 )
 
 func TestGreet(t *testing.T) {

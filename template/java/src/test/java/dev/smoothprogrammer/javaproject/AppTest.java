@@ -1,4 +1,4 @@
-package dev.minizilla.javaproject;
+package dev.smoothprogrammer.javaproject;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
