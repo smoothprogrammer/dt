@@ -20,7 +20,7 @@
             buildInputs = with pkgs; [
               erlang_27
               rebar3
-              erlang_language_platform
+              erlang-language-platform
             ];
           };
         }
