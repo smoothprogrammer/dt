@@ -1,0 +1,9 @@
+# https://github.com/github/gitignore/blob/main/Scheme.gitignore
+
+*.ss~
+*.ss#*
+.#*.ss
+
+*.scm~
+*.scm#*
+.#*.scm

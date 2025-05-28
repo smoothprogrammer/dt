@@ -49,6 +49,10 @@
           path = ./template/go;
           description = "Setup Go Project";
         };
+        guile = {
+          path = ./template/guile;
+          description = "Setup Guile Project";
+        };
         java = {
           path = ./template/java;
           description = "Setup Java Project";
