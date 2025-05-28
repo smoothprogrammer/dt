@@ -29,6 +29,10 @@
       );
 
       templates = {
+        c = {
+          path = ./template/c;
+          description = "Setup C Project";
+        };
         elm = {
           path = ./template/elm;
           description = "Setup Elm Project";
