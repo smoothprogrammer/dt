@@ -1,0 +1,30 @@
+; https://editorconfig.org
+root = true
+
+; default configuration
+[*]
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+indent_style = unset
+
+[{*.nix,flake.lock}]
+indent_style = space
+indent_size = 2
+
+[*.{yml,yaml,json}]
+indent_style = space
+indent_size = 2
+
+[*.md]
+indent_style = space
+indent_size = 2
+
+[*.lua]
+indent_style = space
+indent_size = 2
+quote_style = single
+trailing_table_separator = smart
+call_arg_parentheses = remove
+end_statement_with_semicolon = never

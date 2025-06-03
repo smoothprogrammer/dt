@@ -57,6 +57,10 @@
           path = ./template/java;
           description = "Setup Java Project";
         };
+        lua = {
+          path = ./template/lua;
+          description = "Setup Lua Project";
+        };
         zig = {
           path = ./template/zig;
           description = "Setup Zig Project";
