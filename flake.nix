@@ -61,6 +61,10 @@
           path = ./template/lua;
           description = "Setup Lua Project";
         };
+        swift = {
+          path = ./template/swift;
+          description = "Setup Swift Project";
+        };
         zig = {
           path = ./template/zig;
           description = "Setup Zig Project";
