@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-project",
-    products: [
-        .executable(
-            name: "SwiftProject",
-            targets: ["SwiftProject"]),
-    ],
-    targets: [
-        .executableTarget(
-            name: "SwiftProject"),
-    ]
+  name: "swift-project",
+  products: [
+    .executable(
+      name: "SwiftProject",
+      targets: ["SwiftProject"])
+  ],
+  targets: [
+    .executableTarget(
+      name: "SwiftProject")
+  ]
 )
